@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/static/css/base.css" rel="stylesheet">
+        <title>clock</title>
+    </head>
+    <body onload="start({{ total_seconds }}, '{{ last_service }}', {{ services_count }})">
+        <main class="main">
+            <div class="line service">
+                <span>Последний выпиленный сервис: </span>
+                <span class="service-name" id="last-service"></span>
+            </div>
+            <div class="line">
+                <span>Сервисов: </span>
+                <span class="service-count" id="service-count"></span>
+            </div>
+            <div class="line">С выпила последнего сервиса: </div>
+            <div class="line timer" id="last-removed-service">
+                <span id="days"></span>
+                <span>:</span>
+                <span id="hours"></span>
+                <span>:</span>
+                <span id="minutes"></span>
+                <span>:</span>
+                <span id="seconds"></span>
+            </div>
+        </main>
+    </body>
+</html>
+<script src="/static/js/base.js"></script>

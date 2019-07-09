@@ -1,0 +1,3 @@
+sanic>=19.6.0
+sanic-jinja2>=0.7.5
+Jinja2>=2.10.1
