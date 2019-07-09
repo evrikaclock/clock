@@ -13,4 +13,4 @@ on Windows:
 ```
 
 ## Usage
-```python main.py```
+```(venv)>python main.py```
